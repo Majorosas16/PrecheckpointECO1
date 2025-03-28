@@ -80,7 +80,7 @@ if (players.length < 4) {
   .json({ message: "Los jugadores no están completo, Se paciente!" });
 }
 
-io.emit("notificar-dia", {message:message, players:players});
+io.emit("notificar-dia", {message:message, players: players});
 });
 
 app.post("/notificar-noche", (req, res) => {

@@ -56,14 +56,17 @@ function registerUser() {
 
 
 socket.on("notificar-dia", (data) => {
-  if(data.players.role === "Lobo"){
-    console.log("Esto es para ti Lobo");
+  console.log(data);
   
-    optionN.innerHTML= data.message
+  if(data.players.role === "Lobo"){
+    console.log(data.players.role);
+    
+    console.log("Esto es para ti Lobo");
+
   }else{
     console.log("Esto es para ti Aldeano");
     optionN.innerHTML= data.message
-    wait.innerHTML= data.players
+    wait.innerHTML= data.players.name
   }
 });
 
