@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player | App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAD//wAAKysrAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREREREREREREREREREREREAAAAAAAAREQEREREREBERAQAAAAAQEREBAAAAABAREQEBEAEQEBERAQEQARAQEREBARABEBAREQEBEAEQEBERAQAAAAAQEREBAAAAABAREQEREREREBERAAAAAAAAEREREREREREREREREREREREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        rel="icon" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Hombres lobo</h1>
+    <p>by Castronegro</p>
+
+        <div id="register">
+            <input type="text" id="nameInput" placeholder="Ingresa Nombre">
+            <button id="joinBtn">JOIN</button>
+        </div>
+
+        <div id="startGame">
+            <h1 id="namePlayer"></h1>
+
+            <h2>Tu rol es</h2>
+            <h2 id="role"></h2>
+
+            <h2>Narrador dijo</h2>
+            <h2 id="optionN"></h2>
+
+            <p id="wait">Espera a que otros lobos maten a alguien...</p>
+        </div>
+
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
